@@ -22,8 +22,7 @@ inputs:
 
 runs:
   using: 'docker'
-#  image: 'docker://chabad360/hugo'
-  image: 'Dockerfile'
+  image: 'docker://chabad360/hugo'
   entrypoint: '/entrypoint.sh'
 
 branding:
