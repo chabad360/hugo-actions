@@ -1,0 +1,31 @@
+name: 'Hugo'
+author: 'chabad360'
+description: 'GitHub Action for Building a Hugo Site'
+
+inputs:
+  buildPath:
+    description: 'The path to build the site to'
+    required: false
+    default: './public'
+
+  args:
+    description: 'Arguments to pass to Hugo'
+    required: false
+    default:
+      - '--gc'
+      - '--minify'
+      - '--cleanDestinationDir'
+
+  hugoVersion:
+    description: 'The version of Hugo to use'
+    required: false
+
+runs:
+  using: 'docker'
+#  image: 'docker://chabad360/hugo'
+  image: 'Dockerfile'
+  entrypoint: '/entrypoint.sh'
+
+branding:
+  icon: 'upload-cloud'  
+  color: 'red'
