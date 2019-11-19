@@ -17,7 +17,7 @@
     <a href="https://github.com/chabad360/hugo-actions/blob/master/LICENSE">
       <img alt="License" src="https://img.shields.io/github/license/chabad360/hugo-actions.svg?style=for-the-badge" />
     </a>
-    <a href="https://github.com/marketplace/actions/hugo-build">
+    <a href="https://github.com/marketplace/actions/hugo-site">
       <img alt="Release" src="https://img.shields.io/static/v1?label=&style=for-the-badge&logo=addthis&logoColor=white&message=Get+on+the+GH+Marketplace&color=green" />
     </a>
     <a href="https://github.com/chabad360/hugo-actions/releases/latest">
