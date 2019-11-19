@@ -20,6 +20,7 @@
     <a href="https://github.com/marketplace/actions/hugo-build">
       <img alt="Release" src="https://img.shields.io/static/v1?label=&style=for-the-badge&logo=addthis&logoColor=white&message=Get+on+the+GH+Marketplace&color=green" />
     </a>
+<a href="https://app.fossa.io/projects/git%2Bgithub.com%2Fchabad360%2Fhugo-actions?ref=badge_shield" alt="FOSSA Status"><img src="https://app.fossa.io/api/projects/git%2Bgithub.com%2Fchabad360%2Fhugo-actions.svg?type=shield"/></a>
     <a href="https://github.com/chabad360/hugo-actions/releases/latest">
       <img alt="Release" src="https://img.shields.io/github/release/chabad360/hugo-actions.svg?style=for-the-badge" />
     </a>
@@ -44,6 +45,9 @@ This action also contains support for several external Hugo Helpers:
 If your site requires the use of another external helper, submit an issue and I'll try to add it.
 
 > ⚠️ Note: To use this action, you must have applied to the GitHub Actions public beta. You can apply [here](https://github.com/features/actions/signup/).
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fchabad360%2Fhugo-actions.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fchabad360%2Fhugo-actions?ref=badge_large)
 
 ## ⭐ Getting started
 
