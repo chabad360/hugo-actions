@@ -1,13 +1,11 @@
 #!/usr/bin/env sh
-
 set -e
 
 PLAIN='\033[0m'
 BOLD='\033[1;37m'
 
-
 if [ "${INPUT_HUGOVERSION}" ]; then
-  echo -e "\n${BOLD}Using Hugo version ${INPUT_HUGOVERSION}.${PLAIN}"
+  echo -e "\n${BOLD}Downloading Hugo version ${INPUT_HUGOVERSION}.${PLAIN}"
   wget "https://github.com/gohugoio/hugo/releases/download/v$(echo "${INPUT_HUGOVERSION}" | grep -o  "[0-9]\+.[0-9]\+.[0-9]\+")/hugo_${INPUT_HUGOVERSION}_Linux-64bit.tar.gz"
   tar xzvf hugo*
   mv hugo /usr/bin/hugo
@@ -27,5 +25,5 @@ postcss --version
 echo -ne "${BOLD}Pandoc: ${PLAIN}"
 pandoc -v
 
-echo -e "\n${BOLD}Generating Site ${NAME} at commit ${GITHUB_SHA}${PLAIN}"
+echo -e "\n${BOLD}Generating Site ${NAME} at commit ${GITHUB_SHA}.${PLAIN}"
 hugo ${INPUT_ARGS} -d "${INPUT_BUILDPATH}"
