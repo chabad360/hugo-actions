@@ -11,10 +11,7 @@ inputs:
   args:
     description: 'Arguments to pass to Hugo'
     required: false
-    default:
-      - '--gc'
-      - '--minify'
-      - '--cleanDestinationDir'
+    default: --gc --minify --cleanDestinationDir
 
   hugoVersion:
     description: 'The version of Hugo to use'
