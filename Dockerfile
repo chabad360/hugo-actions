@@ -2,7 +2,7 @@ FROM registry.gitlab.com/pages/hugo/hugo_extended:latest
 
 # Hugo External Dependecies
 RUN apk add --update --no-cache -X http://dl-cdn.alpinelinux.org/alpine/edge/testing \
-  py-pygments asciidoctor npm py3-rst \
+  py-pygments asciidoctor npm py3-rst ca-certificates libc6-compat libstdc++ \
   && rm -rf /var/cache/apk/* \
   && npm config set unsafe-perm true \
   && npm install -g postcss-cli \
@@ -18,5 +18,7 @@ COPY ./docker-entrypoint.sh /entrypoint.sh
 WORKDIR /site
 
 VOLUME [ "/site" ]
+
+EXPOSE 1313
 
 CMD [ "/usr/bin/hugo", "-h" ]
