@@ -11,7 +11,7 @@ RUN npm config set unsafe-perm true \
 
 RUN wget https://github.com/jgm/pandoc/releases/download/2.9.1.1/pandoc-2.9.1.1-linux-amd64.tar.gz \
   && tar xvzf pandoc-2.9.1.1-linux-amd64.tar.gz --strip-components 1 -C /usr/local \
-  && rm pandoc-2.9.1.1-linux.tar.gz \
+  && rm pandoc-2.9.1.1-linux-amd64.tar.gz \
   && mkdir /site
   
 COPY ./docker-entrypoint.sh /entrypoint.sh
