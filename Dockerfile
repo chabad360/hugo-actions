@@ -7,6 +7,7 @@ RUN apk add --update --no-cache -X http://dl-cdn.alpinelinux.org/alpine/edge/tes
 
 RUN npm config set unsafe-perm true \
   && npm install -g postcss-cli \
+  && npm install -g @babel/cli @babel/core \
   && npm config set unsafe-perm false
 
 RUN wget https://github.com/jgm/pandoc/releases/download/2.9.1.1/pandoc-2.9.1.1-linux-amd64.tar.gz \
