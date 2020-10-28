@@ -1,5 +1,5 @@
 <div align="center" >
-  <img width=400  alt="Image Credit: Peaceiris" src="https://raw.githubusercontent.com/peaceiris/actions-hugo/master/images/ogp.svg?sanitize=true" />
+  <img width=400  alt="Image Credit: Peaceiris" src="https://raw.githubusercontent.com/peaceiris/actions-hugo/main/images/ogp.svg?sanitize=true" />
   <p style="font-size:12px;" >
     Image Credit: <a href="https://github.com/peaceiris">Peaceiris</a>
   </p>
