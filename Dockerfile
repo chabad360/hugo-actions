@@ -6,7 +6,7 @@ RUN apk add --update --no-cache -X http://dl-cdn.alpinelinux.org/alpine/edge/tes
   && rm -rf /var/cache/apk/* 
 
 RUN npm config set unsafe-perm true \
-  && npm install -g postcss postcss-cli \
+  && npm install -g postcss postcss-cli autoprefixer \
   && npm install -g @babel/cli @babel/core @babel/preset-env \
   && npm config set unsafe-perm false
 
