@@ -26,8 +26,6 @@ echo -ne "${BOLD}Pandoc: ${PLAIN}"
 pandoc -v
 echo -ne "${BOLD}Babel: ${PLAIN}"
 babel --version
-echo -ne "${BOLD}Autoprefixer: ${PLAIN}"
-autoprefixer --version
 
 echo -e "\n${BOLD}Generating Site ${NAME} at commit ${GITHUB_SHA}.${PLAIN}"
 hugo ${INPUT_ARGS} -d "${INPUT_BUILDPATH}"
