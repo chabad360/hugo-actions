@@ -28,4 +28,5 @@ echo -ne "${BOLD}Babel: ${PLAIN}"
 babel --version
 
 echo -e "\n${BOLD}Generating Site ${NAME} at commit ${GITHUB_SHA}.${PLAIN}"
+hugo mod get
 hugo ${INPUT_ARGS} -d "${INPUT_BUILDPATH}"

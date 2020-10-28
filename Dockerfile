@@ -2,7 +2,7 @@ FROM registry.gitlab.com/pages/hugo/hugo_extended:latest
 
 # Hugo External Dependecies
 RUN apk add --update --no-cache -X http://dl-cdn.alpinelinux.org/alpine/edge/testing \
-  py-pygments asciidoctor npm py3-rst ca-certificates libc6-compat libstdc++ \
+  py-pygments asciidoctor npm py3-rst ca-certificates libc6-compat libstdc++ go \
   && rm -rf /var/cache/apk/* 
 
 RUN npm config set unsafe-perm true \
