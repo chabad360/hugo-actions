@@ -45,8 +45,6 @@ This action also contains support for several external Hugo Helpers:
 
 If your site requires the use of another external helper, submit an issue and I'll try to add it.
 
-> ⚠️ Note: To use this action, you must have applied to the GitHub Actions public beta. You can apply [here](https://github.com/features/actions/signup/).
-
 ## ⭐ Getting started
 
 This is a basic `workflow.yml` to get you started (for more information scroll down to [⭐ Inputs](#-inputs)):
