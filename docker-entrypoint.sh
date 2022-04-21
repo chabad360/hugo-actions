@@ -27,6 +27,8 @@ pandoc -v
 echo -ne "${BOLD}Babel: ${PLAIN}"
 babel --version
 
+git config --global --add safe.directory "${GITHUB_WORKSPACE}"
+
 echo -e "\n${BOLD}Generating Site ${NAME} at commit ${GITHUB_SHA}.${PLAIN}"
 hugo mod get
 hugo ${INPUT_ARGS} -d "${INPUT_BUILDPATH}"
