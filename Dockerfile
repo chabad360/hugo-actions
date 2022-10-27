@@ -5,10 +5,8 @@ RUN apk add --update --no-cache -X http://dl-cdn.alpinelinux.org/alpine/edge/tes
   py-pygments asciidoctor npm py3-rst ca-certificates libc6-compat libstdc++ git go openssl \
   && rm -rf /var/cache/apk/* 
 
-RUN npm config set unsafe-perm true \
-  && npm install -g postcss postcss-cli autoprefixer \
-  && npm install -g @babel/cli @babel/core @babel/preset-env \
-  && npm config set unsafe-perm false
+RUN npm install --unsafe-perm=true -g postcss postcss-cli autoprefixer \
+  && npm install --unsafe-perm=true -g @babel/cli @babel/core @babel/preset-env
 
 RUN wget https://github.com/jgm/pandoc/releases/download/2.9.1.1/pandoc-2.9.1.1-linux-amd64.tar.gz \
   && tar xvzf pandoc-2.9.1.1-linux-amd64.tar.gz --strip-components 1 -C /usr/local \
